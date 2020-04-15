@@ -1,0 +1,9 @@
+{
+    "name" : "MyProj",
+    "description": "Some precomp experiments",
+    "provides": {
+        "MyProj" : "lib/MyProj.rakumod",
+        "MyProj::A" : "lib/MyProj/A.rakumod",
+        "MyProj::B" : "lib/MyProj/B.rakumod"
+  }
+}
