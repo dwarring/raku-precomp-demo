@@ -5,7 +5,7 @@ $ raku -I . -e'use MyProj' 2> /dev/null
 $ echo ' ' >> lib/MyProj/B.rakumod; raku -I . -e'use MyProj
 compile MyProj
 compile MyProj::A
-compile MyProj::Bq
+compile MyProj::B
 ```
 
 Notice the cascading compilation of MyProj::A and MyProj following the update of MyProj::B
