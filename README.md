@@ -13,7 +13,7 @@ Notice the cascading compilation of MyProj::A and MyProj following the update of
 But if the compile-time `need MyProj::A` is changed to a run-time `require MyProj::A`, then:
 
 ```
-$ raku -I . -e'use MyProj' > /dev/null
+$ raku -I . -e'use MyProj' 2> /dev/null
 $ echo ' ' >> lib/MyProj/B.rakumod; raku -I . -e'use MyProj
 compile MyProj::A
 compile MyProj::B
